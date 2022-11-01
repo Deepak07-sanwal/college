@@ -16,14 +16,14 @@ int main()
       }
       
       //step 3: make table of difrence
-      int count = n;
+      int count = n-1;
       
       
       for(int i=2;i<n+1;i++)
       {
-          for(int j=count;j>=0;j--)
+          for(int j=count;j>0;j--)
           {
-              IM[j][i] = IM[j][i-1]-IM[j-1][i-1];
+              IM[j][i] = IM[j][i-1] - IM[j-1][i-1];
               
           }
         //   count--;
